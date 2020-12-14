@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUB y Switch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="estilos/index.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <span id="espaciado1"></span>
+        <img src="./Imagenes/icon.png" alt="Icono" id="logo">
+        <a id="burger" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <span id="espaciadoRes"></span>
+        <a href="#Comparacion">Comparacion</a>
+        <a href="#Switch">Switch</a>
+        <a href="#Hub">Hub</a>
+        <a href="#Historia">Historia</a>
+        <a href="#hero">Inicio</a>
+
+    </div>
+
+    <section id="hero">
+        <!-- <p>HUB y Switch</p> -->
+    </section>
+
+    <section id="Historia">
+        <p class="titulo">Historia</p>
+        <p class="texto">
+            La interconexión de equipos en una red tiene como objetivo unir los distintos dispositivo a una misma red
+            para, para lograr esto se empezó uniendo los cables
+            provenientes de los dispositivos a un bus principal con la ayuda de conexiones de BNC en forma de T, de esta
+            manera la información era fácilmente accesible por todos los dispositivos, pero eran poco seguras e
+            ineficientes por tanto sergio el hub, pero no fue hasta la creación del Switch que los problemas con la
+            la interconexión no se resolvieron ya que estos dos dispositivos tenían un problema con el dominio de
+            colisión. Este es problema que ocurre cuando dos equipos escribir o envían información a la vez en el mismo
+            medio por tanto esta información no se puede recuperar ya que se superponen.
+        </p>
+        <img class="imagen" id="bnc" src="./Imagenes/image2.png" alt="">
+    </section>
+
+    <section id="Hub">
+        <p class="titulo">Hub</p>
+        <p class="texto">
+            El hub tiene la función de unir los cables
+            provenientes de los dispositivos a un bus principal, de manera que la información que entraba por alguno de
+            sus puertos eran volcados al bus principal. Con este dispositivo conseguimos una mejor organización y
+            estructuración de las redes. Para evitar los problemas de colisión se creó un sistema en el cual si dos
+            equipos
+            escribían o enviaban a la vez ambos esperaban un tiempo aleatorio y volvían a enviar el mensaje, pero los
+            problemas de colisiones seguían ya que el las redes aumentaron rápidamente su tamaño, por eso se creó el
+            hub.
+        </p>
+        <img class="imagen" src="./Imagenes/hub.jpg" alt="">
+    </section>
+    <section id="Switch">
+        <p class="titulo">Switch</p>
+        <p class="texto">
+            Este era muy similar al hub pero contaba con “inteligencia”, eso significa que es capaz de gestionar la
+            información que recibe en cada puerto y evitar que se escriba en dos equipos a la vez, por tanto el dominio
+            de colisión se reduce drásticamente a sólo la conexión con el equipo y el switch por tanto que ocurra esto
+            es demasiado poco frecuente.
+
+
+        </p>
+        <img class="imagen" src="./Imagenes/Switch.jpg" alt="">
+    </section>
+    <section id="Comparacion">
+        <p class="titulo">Comparación</p>
+        <p class="texto">
+            El Switch no se puede comparar con el hub que es una evolución directa y consiguen mejoras en la red, pero
+            aun así el switch tiene características propias como poder crear redes independientes virtualmente y las
+            mejoras en seguridad ya que este limita quien puede ver los mensajes que se envian por el medio ya que cada
+            equipo tiene su propio canal y el switch se encarga de gestionarlo
+        </p>
+    </section>
+
+    <section id="col2">
+        <div class="col">Jose Manuel Estrada Cobo</div>
+        <div class="col">Trabajo Perifericos</div>
+    </section>
+
+    <script src="./javascripts/index.js"></script>
+</body>
+
+</html>
