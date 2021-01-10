@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUB y Switch</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="shortcut icon" href="Imagenes/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/index.css">
 </head>
 
@@ -18,16 +18,17 @@
             <i class="fa fa-bars"></i>
         </a>
         <span id="espaciadoRes"></span>
-        <a href="#Comparacion">Comparacion</a>
-        <a href="#Switch">Switch</a>
-        <a href="#Hub">Hub</a>
+        <a href="#Mas">Más</a>
+        <a href="#Galeria">Galería</a>
+        <a href="#Ventajas">Ventajas</a>
+        <a href="#Dispotivos">Dispotivos</a>
         <a href="#Historia">Historia</a>
         <a href="#hero">Inicio</a>
 
     </div>
 
     <section id="hero">
-        <!-- <p>HUB y Switch</p> -->
+        <p>HUB y Switch</p>
     </section>
 
     <section id="Historia">
@@ -45,7 +46,7 @@
         <img class="imagen" id="bnc" src="./Imagenes/image2.png" alt="">
     </section>
 
-    <section id="Hub">
+    <section id="Dispotivos">
         <p class="titulo">Hub</p>
         <p class="texto">
             El hub tiene la función de unir los cables
@@ -59,26 +60,185 @@
         </p>
         <img class="imagen" src="./Imagenes/hub.jpg" alt="">
     </section>
-    <section id="Switch">
+    <section>
         <p class="titulo">Switch</p>
         <p class="texto">
             Este era muy similar al hub pero contaba con “inteligencia”, eso significa que es capaz de gestionar la
             información que recibe en cada puerto y evitar que se escriba en dos equipos a la vez, por tanto el dominio
             de colisión se reduce drásticamente a sólo la conexión con el equipo y el switch por tanto que ocurra esto
             es demasiado poco frecuente.
-
-
         </p>
         <img class="imagen" src="./Imagenes/Switch.jpg" alt="">
     </section>
-    <section id="Comparacion">
-        <p class="titulo">Comparación</p>
+    <section id="Ventajas">
+        <p class="titulo">Ventajas</p>
+
+        <div class="ContenedorCards">
+            <div class="Card">
+                <p class="CardTitulo">Hub</p>
+                <div class="ContenedorCards">
+                    <div class="Lista">
+                        <p class=TituloLista>Ventajas</p>
+                        <ul>
+                            <li>Muy barato</li>
+                            <li>Facil de usar</li>
+                            <li>Facil de instalar</li>
+                        </ul>
+                    </div>
+                    <div class="Lista">
+                        <p class=TituloLista>Desventajas</p>
+                        <ul>
+                            <li>Lento</li>
+                            <li>Causa colisiones</li>
+                            <li>Poca seguridad</li>
+                            <li>Obsoleto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="Card">
+                <p class="CardTitulo">Switch</p>
+                <div class="ContenedorCards">
+                    <div class="Lista">
+                        <p class=TituloLista>Ventajas</p>
+                        <ul>
+                            <li>Muchas configuraciones</li>
+                            <li>Mucha seguridad</li>
+                            <li>Corrige errores</li>
+                            <li>Previene colisiones</li>
+                        </ul>
+                    </div>
+                    <div class="Lista">
+                        <p class=TituloLista>Desventajas</p>
+                        <ul>
+                            <li>Mas complejo</li>
+                            <li>Mas Caro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="Galeria">
+        <p class="titulo">Galería</p>
         <p class="texto">
-            El Switch no se puede comparar con el hub que es una evolución directa y consiguen mejoras en la red, pero
-            aun así el switch tiene características propias como poder crear redes independientes virtualmente y las
-            mejoras en seguridad ya que este limita quien puede ver los mensajes que se envian por el medio ya que cada
-            equipo tiene su propio canal y el switch se encarga de gestionarlo
+            A continuación tenemos una serie de images de switch y hub para aprender a reconocerlos.
         </p>
+        <!-- Galeria -->
+
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="imagenes/1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="imagenes/2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="imagenes/3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="imagenes/4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="imagenes/5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="imagenes/6.png" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="imagenes/1.jpg" style="width:100%" onclick="currentSlide(1)"
+                        alt="Switch">
+
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="imagenes/2.jpg" style="width:100%" onclick="currentSlide(2)"
+                        alt="Hub">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="imagenes/3.jpg" style="width:100%" onclick="currentSlide(3)"
+                        alt="Switch">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="imagenes/4.jpg" style="width:100%" onclick="currentSlide(4)"
+                        alt="Hub">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="imagenes/5.jpg" style="width:100%" onclick="currentSlide(5)"
+                        alt="Switch">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="imagenes/6.png" style="width:100%" onclick="currentSlide(6)"
+                        alt="Hub">
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin Galeria -->
+    </section>
+
+    <section id="Mas">
+        <p class="titulo">Más</p>
+        <p class="texto">
+            Si quieres aprender más, aquí tienes un par de videos
+        </p>
+        <div class="VideoGrid">
+            <div class="ContenedorIframe">
+                <div class="iframe-responsive">
+                    <iframe class="iframe-content" src="https://www.youtube.com/embed/rN3Td2Wiag4" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+            <div class="ContenedorIframe">
+                <div class="iframe-responsive">
+                    <iframe class="iframe-content" src="https://www.youtube.com/embed/liudX0oskwM" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </div>
+        <p class="texto">
+            Ademas por si estas interesado en adquirir uno de estos dispostivos, tienes marcada una tienda en un mapa.
+        </p>
+        <div class="ContenedorIframe mapa">
+            <div class="iframe-responsive">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.4705647575056!2d-4.433600084977203!3d36.71125838040146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f79b018ca431%3A0x7741b8ab97ea74c2!2sMediaMarkt!5e0!3m2!1ses!2ses!4v1610306102632!5m2!1ses!2ses"
+                    class="iframe-content" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
     </section>
 
     <section id="col2">

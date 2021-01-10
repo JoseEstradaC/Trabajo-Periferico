@@ -2,7 +2,9 @@
 @import 'navbar.css';
 @import 'historia.css';
 @import 'footer.css';
-
+@import 'card.css';
+@import 'galeria.css';
+@import 'mas.css';
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
@@ -21,10 +23,10 @@ body {
 	font-family: 'Permanent Marker', cursive;
 	font-size: 4em;
 	color: rgb(196, 196, 196);
-	text-decoration: underline;
 	text-decoration: underline wavy;
 	padding-bottom: 1.5%;
 	padding-top: 4%;
+	display: block;
 }
 
 .texto {
